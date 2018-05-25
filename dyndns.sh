@@ -25,7 +25,7 @@ function update_ip {
 }
 
 #New ip address, finds your current external ip address
-new_ip=$(https://api.ipify.org)
+new_ip=$(curl -s https://api.ipify.org)
 
 for record in `echo ${records[*]}`;
 	do
